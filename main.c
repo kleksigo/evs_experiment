@@ -13,7 +13,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "disclaimer.h"
 #include "stat_enc_fx.h"
 /*
  * 

@@ -52,20 +52,24 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-L../evs_fixed_point_26442-e10/c-code ../evs_fixed_point_26442-e10/c-code/EVS_cod.so ../evs_fixed_point_26442-e10/c-code/EVS_dec.so
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/evs_experiment
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/evs_experiment: ../evs_fixed_point_26442-e10/c-code/EVS_cod.so
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/evs_experiment: ../evs_fixed_point_26442-e10/c-code/EVS_dec.so
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/evs_experiment: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/evs_experiment ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+	$(COMPILE.c) -O2 -I../evs_fixed_point_26442-e10/c-code/basic_math -I../evs_fixed_point_26442-e10/c-code/basic_op -I../evs_fixed_point_26442-e10/c-code/lib_com -I../evs_fixed_point_26442-e10/c-code/lib_dec -I../evs_fixed_point_26442-e10/c-code/lib_enc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
 
 # Subprojects
 .build-subprojects:
@@ -73,6 +77,8 @@ ${OBJECTDIR}/main.o: main.c
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
+	${RM} -r ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/EVS_dec.so ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/EVS_cod.so
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/evs_experiment
 
 # Subprojects
 .clean-subprojects:
