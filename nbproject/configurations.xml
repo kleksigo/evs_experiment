@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_enc</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_math</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_enc/rom_enc_fx.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_enc/stat_enc_fx.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_enc/vad_basop.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/basop_mpy.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/basop_util.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/cnst_fx.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/disclaimer.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/g192.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/mime.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/options.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/prot_fx.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/rom_basop_util.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/rom_com_fx.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_com/stat_com.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/basop32.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/control.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/count.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/enh1632.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/enh40.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/enhUL32.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/move.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/stl.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/typedef.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_op/typedefs.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_math/log2.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_math/math_32.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_math/math_op.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_math/oper_32b.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/basic_math/rom_basic_math.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/EvsRXlib.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/basop_util_jbm.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/jbm_jb4_circularbuffer.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/jbm_jb4_inputbuffer.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/jbm_jb4_jmf.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/jbm_jb4sb.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/jbm_pcmdsp_apa.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/jbm_pcmdsp_fifo.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/jbm_pcmdsp_similarityestimation.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/jbm_pcmdsp_window.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/rom_dec_fx.h</pElem>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code/lib_dec/stat_dec_fx.h</pElem>
+          </incFile>
+        </cTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../../Downloads/evs_fixed_point_26442-e10/c-code</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibFileItem>../../Downloads/evs_fixed_point_26442-e10/c-code/EVS_cod.so</linkerLibFileItem>
+            <linkerLibFileItem>../../Downloads/evs_fixed_point_26442-e10/c-code/EVS_dec.so</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
